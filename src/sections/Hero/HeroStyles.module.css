@@ -55,3 +55,34 @@ position: absolute;
 right: 0;
 width: 25px;
 }
+.colorMode:hover{
+    cursor: pointer;
+}
+.description{
+    max-width: 24ch;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+}
+
+@media (width >= 800px){
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        .hero {
+            max-width: 350px;
+            width: 350px;
+        }
+    }
+}
+@media (width >= 1400px){
+    .container {
+        .hero{
+            max-width: 400px;
+            width: 400px;
+        }
+    }
+}
