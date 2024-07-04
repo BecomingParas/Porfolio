@@ -1,10 +1,9 @@
 import React from "react";
 import styles from "./ProjectsStyles.module.css";
-
-import hipsster from"../../assets/hipsster.png";
-import freshBurger from "../../assets/fresh-burger.png"
+import reactrouter from "../../assets/react-router.png"
+import musicPortfolio from "../../assets/master the art of Music.png"
 import ProjectCard from "../../common/ProjectCard";
-import fitLift from "../../assets/fitlift.png";
+import todoproject from "../../assets/todo.png"
 import frontend from "../../assets/frontend-hora.png"
 
 function Projects() {
@@ -14,26 +13,27 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard 
         src={frontend}
+        
         link="https://portfolio-demo-snowy.vercel.app/"
         h3="Frontend Hora"
         p="Portfolio Horaa"/>
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/parasnever/reactPorfolio"
-          h3="Fresh Burger"
-          p="Hamburger Resturant"
+          src={musicPortfolio }
+          link="https://projectnext100.vercel.app/"
+          h3="Music Academy"
+          p="Master the art of Music"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/parasnever/reactPorfolio"
-          h3="Hipsster"
-          p="Glass Shop"
+          src={reactrouter}
+          link="https://github.com/parasnever/React-router-crash"
+          h3="React Router"
+          p="Project of React-router"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/parasnever/reactPorfolio"
-          h3="FitLift"
-          p="Fitness App"
+          src={todoproject}
+          link="https://todo-context-local-zeta.vercel.app/"
+          h3="Todo Project"
+          p="Todo project by React"
         />
       </div>
     </section>
