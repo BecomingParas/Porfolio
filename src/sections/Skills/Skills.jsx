@@ -4,7 +4,10 @@ import SkillList from "../../common/SkillList";
 import { useTheme } from "../../common/ThemeContext";
 import checkMarkIconDark from "../../assets/checkmark-dark.svg"
 import checkMarkIconLight from "../../assets/checkmark-light.svg"
-
+import htmlLogo from "../../assets/htmllogo.png"
+import cssLogo from "../../assets/Tailwind_CSS_Logo.svg.png"
+import jssLogo from"../../assets/js.webp"
+import tsLogo from "../../assets/ts.webp"
 function Skills() {
     const {theme} = useTheme()
     const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark
@@ -12,10 +15,10 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1>Skills</h1>
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill='HTML'/>
-        <SkillList src={checkMarkIcon} skill='CSS'/>
-        <SkillList src={checkMarkIcon} skill='JAVASCRIPT'/>
-        <SkillList src={checkMarkIcon} skill='TYPESCRIPT'/>
+        <SkillList src={htmlLogo} skill='HTML'/>
+        <SkillList src={cssLogo} skill='CSS'/>
+        <SkillList src={jssLogo} skill='JAVASCRIPT'/>
+        <SkillList src={tsLogo} skill='TYPESCRIPT'/>
         <SkillList src={checkMarkIcon} skill='NODE'/>
         
         
