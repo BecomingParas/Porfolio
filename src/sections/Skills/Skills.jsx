@@ -8,6 +8,11 @@ import htmlLogo from "../../assets/htmllogo.png"
 import cssLogo from "../../assets/Tailwind_CSS_Logo.svg.png"
 import jssLogo from"../../assets/js.webp"
 import tsLogo from "../../assets/ts.webp"
+import nodeLogo from"../../assets/node.png"
+import reactLogo from "../../assets/react.png"
+import nextLogo from "../../assets/nextlogo.png"
+import tailwindLogo from "../../assets/tailwind.png"
+
 function Skills() {
     const {theme} = useTheme()
     const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark
@@ -19,15 +24,15 @@ function Skills() {
         <SkillList src={cssLogo} skill='CSS'/>
         <SkillList src={jssLogo} skill='JAVASCRIPT'/>
         <SkillList src={tsLogo} skill='TYPESCRIPT'/>
-        <SkillList src={checkMarkIcon} skill='NODE'/>
+        <SkillList src={nodeLogo} skill='NODE'/>
         
         
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill='REACT'/>
-        <SkillList src={checkMarkIcon} skill='NEXT JS'/>
-        <SkillList src={checkMarkIcon} skill='TAILWIND CSS'/>
+        <SkillList src={reactLogo} skill='REACT'/>
+        <SkillList src={nextLogo} skill='NEXT JS'/>
+        <SkillList src={tailwindLogo} skill='TAILWIND CSS'/>
         <SkillList src={checkMarkIcon} skill='FIGMA'/>
         
       
