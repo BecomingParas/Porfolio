@@ -8,6 +8,7 @@
     min-height: 500px;
     .hero{
         max-width: 200px;
+        border-radius: 51%;
     }
     span{
         display: flex ;
