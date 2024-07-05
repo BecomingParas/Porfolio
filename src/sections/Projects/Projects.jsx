@@ -25,7 +25,7 @@ function Projects() {
         />
         <ProjectCard
           src={reactrouter}
-          link="https://github.com/parasnever/React-router-crash"
+          link="https://react-router-crash.vercel.app"
           h3="React Router"
           p="Project of React-router"
         />

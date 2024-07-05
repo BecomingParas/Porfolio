@@ -5,14 +5,19 @@ import { useTheme } from "../../common/ThemeContext";
 import checkMarkIconDark from "../../assets/checkmark-dark.svg"
 import checkMarkIconLight from "../../assets/checkmark-light.svg"
 import htmlLogo from "../../assets/htmllogo.png"
-import cssLogo from "../../assets/Tailwind_CSS_Logo.svg.png"
+import cssLogo from "../../assets/css.png"
 import jssLogo from"../../assets/js.webp"
 import tsLogo from "../../assets/ts.webp"
 import nodeLogo from"../../assets/node.png"
 import reactLogo from "../../assets/react.png"
 import nextLogo from "../../assets/nextlogo.png"
 import tailwindLogo from "../../assets/tailwind.png"
-
+import figmaLogo from "../../assets/figma.png"
+import reduxLogo from "../../assets/redux.svg"
+import gitLogo from "../../assets/git.png"
+import bootstrapLogo from "../../assets/bootstrap.png"
+import cppLogo from "../../assets/cpp.png"
+import pythonLogo from "../../assets/python.png"
 function Skills() {
     const {theme} = useTheme()
     const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark
@@ -33,7 +38,7 @@ function Skills() {
         <SkillList src={reactLogo} skill='REACT'/>
         <SkillList src={nextLogo} skill='NEXT JS'/>
         <SkillList src={tailwindLogo} skill='TAILWIND CSS'/>
-        <SkillList src={checkMarkIcon} skill='FIGMA'/>
+        <SkillList src={figmaLogo} skill='FIGMA'/>
         
       
         
@@ -41,12 +46,12 @@ function Skills() {
       <hr />
   
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill='Redux'/>
-        <SkillList src={checkMarkIcon} skill='Git'/>
-        <SkillList src={checkMarkIcon} skill='Bootstrap'/>
+        <SkillList src={reduxLogo} skill='Redux'/>
+        <SkillList src={gitLogo} skill='Git'/>
+        <SkillList src={bootstrapLogo} skill='Bootstrap'/>
         
-        <SkillList src={checkMarkIcon} skill='C++'/>
-        <SkillList src={checkMarkIcon} skill='Python'/>
+        <SkillList src={cppLogo} skill='C++'/>
+        <SkillList src={pythonLogo} skill='Python'/>
         
       </div>
       
