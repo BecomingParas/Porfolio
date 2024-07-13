@@ -9,18 +9,26 @@ function Header() {
         <nav className=" bg-white border-gray-200 px-4 lg:px-6 py-2.5">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex flex-center">
-              <img src={lionLogo} alt="logo" className=" w-12 h-12 rounded-full" />
+              <img
+                src={lionLogo}
+                alt="logo"
+                className=" w-12 h-12 rounded-full"
+              />
             </Link>
             <div className="flex items-center lg:order-2">
               <Link
                 to="https://www.linkedin.com/in/paras-shrestha-37a333266/"
-                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 
+                font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                target="_blank"
               >
                 Linkdein
               </Link>
               <Link
                 to="https://github.com/parasnever"
-                className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium 
+                rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                target="_blank"
               >
                 Github
               </Link>

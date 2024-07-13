@@ -10,6 +10,9 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 import CV from '../../assets/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -20,19 +23,21 @@ function Hero() {
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
   return (
+    <>
+    
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img
+        <img id='profile'
           src={heroImg}
           className={styles.hero}
           alt="Profile picture of Harris Johnsen"
-        />
+          />
         <img
           className={styles.colorMode}
           src={themeIcon}
           alt="Color mode icon"
           onClick={toggleTheme}
-        />
+          />
       </div>
       <div className={styles.info}>
         <h1>
@@ -59,8 +64,16 @@ function Hero() {
         <a href={CV} download>
           <button className="hover">Resume</button>
         </a>
+      
+
       </div>
     </section>
+    <Projects />
+    <Skills />
+    <Contact />
+
+
+          </>
   );
 }
 

@@ -6,16 +6,19 @@ import Hero from './sections/Hero/Hero'
 import Projects from './sections/Projects/Projects'
 import Skills from './sections/Skills/Skills'
 import Header from './sections/Header/Header'
+import { Outlet } from 'react-router-dom'
 function App() {
 
 
   return (
     <>
     <Header />
-    <Hero />
+    {/* <Hero />
     <Projects />
     <Skills />
-    <Contact />
+   
+    <Contact /> */}
+    <Outlet />
     <Footer/>
     </>
   )
