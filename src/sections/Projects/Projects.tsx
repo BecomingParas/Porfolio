@@ -1,24 +1,24 @@
 import React from "react";
 import styles from "./ProjectsStyles.module.css";
-import reactrouter from "../../assets/react-router.png"
-import musicPortfolio from "../../assets/master the art of Music.png"
+import reactrouter from "../../assets/react-router.png";
+import musicPortfolio from "../../assets/master the art of Music.png";
 import ProjectCard from "../../common/ProjectCard";
-import todoproject from "../../assets/todo.png"
-import frontend from "../../assets/frontend-hora.png"
+import todoproject from "../../assets/todo.png";
+import frontend from "../../assets/frontend-hora.png";
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        <ProjectCard 
-        src={frontend}
-        
-        link="https://portfolio-demo-snowy.vercel.app/"
-        h3="Frontend Hora"
-        p="Portfolio Horaa"/>
         <ProjectCard
-          src={musicPortfolio }
+          src={frontend}
+          link="https://portfolio-demo-snowy.vercel.app/"
+          h3="Frontend Hora"
+          p="Portfolio Horaa"
+        />
+        <ProjectCard
+          src={musicPortfolio}
           link="https://projectnext100.vercel.app/"
           h3="Music Academy"
           p="Master the art of Music"
